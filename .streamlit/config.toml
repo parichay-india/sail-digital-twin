@@ -1,0 +1,24 @@
+# ═══════════════════════════════════════════════════════════════════════
+# SAIL Digital Twin — Streamlit Cloud Configuration
+# ═══════════════════════════════════════════════════════════════════════
+# Theme colors match SAIL brand identity; applied automatically on deploy
+
+[theme]
+primaryColor = "#1F3864"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F7FA"
+textColor = "#1A1A1A"
+font = "sans serif"
+
+[server]
+maxUploadSize = 200
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+showErrorDetails = true
+toolbarMode = "minimal"

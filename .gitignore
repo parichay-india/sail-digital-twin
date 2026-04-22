@@ -1,0 +1,51 @@
+# ═══════════════════════════════════════════════════════════════════════
+# SAIL Digital Twin — Git Ignore Rules
+# ═══════════════════════════════════════════════════════════════════════
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.Python
+build/
+dist/
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets / local overrides (never commit these)
+.env
+.env.local
+*.log
+streamlit_log.txt
+secrets.toml
+
+# Large raw data not needed by the Streamlit app
+# (the processed Parquet files in data/ are small and ARE committed)
+canonical_dataset/
+master_dataset*.xlsx
+*.csv
+!streamlit_app/**/*.csv
+
+# Temporary files
+*.tmp
+*.bak
+*~
